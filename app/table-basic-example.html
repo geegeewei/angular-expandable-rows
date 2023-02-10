@@ -1,16 +1,25 @@
 <mat-card>
-  <mat-form-field class="example-full-width">
-    <span matPrefix> </span>
-    <input
-      type="tel"
-      matInput
-      placeholder="Customer ID"
-      value="A123456789"
-      name="search"
-    />
-    <button matSuffix mat-button><mat-icon>search</mat-icon></button>
-  </mat-form-field>
+  <button _ngcontent-ily-c0="">
+    <mat-icon
+      _ngcontent-ily-c0=""
+      class="add-button mat-icon notranslate material-icons mat-icon-no-color"
+      role="img"
+      aria-hidden="true"
+      data-mat-icon-type="font"
+      >add_box</mat-icon
+    >
+  </button>
   <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort>
+    <button _ngcontent-ily-c0="">
+      <mat-icon
+        _ngcontent-ily-c0=""
+        class="add-button mat-icon notranslate material-icons mat-icon-no-color"
+        role="img"
+        aria-hidden="true"
+        data-mat-icon-type="font"
+        >add_box</mat-icon
+      >
+    </button>
     <ng-container
       matColumnDef="{{column}}"
       *ngFor="let column of columnsToDisplay"
@@ -21,64 +30,67 @@
 
     <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
     <ng-container matColumnDef="expandedDetail">
+      <button _ngcontent-ily-c0="">
+        <mat-icon
+          _ngcontent-ily-c0=""
+          class="
+            add-button
+            mat-icon
+            notranslate
+            material-icons
+            mat-icon-no-color
+          "
+          role="img"
+          aria-hidden="true"
+          data-mat-icon-type="font"
+          >add_box</mat-icon
+        >
+      </button>
       <td colspan="2" mat-cell *matCellDef="let element">
         <div
           style="overflow: hidden"
           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'"
         >
+          <button _ngcontent-ily-c0="">
+            <mat-icon
+              _ngcontent-ily-c0=""
+              class="
+                add-button
+                mat-icon
+                notranslate
+                material-icons
+                mat-icon-no-color
+              "
+              role="img"
+              aria-hidden="true"
+              data-mat-icon-type="font"
+              >add_box</mat-icon
+            >
+          </button>
           <table class="mat-table">
             <thead>
               <tr class="mat-header-row">
-                <th class="mat-header-cell">
-                  Personal Parameter Condition No.
-                </th>
-                <th class="mat-header-cell">
-                  Personal Parameter Condition Name
-                </th>
-                <th class="mat-header-cell">Value</th>
+                <th class="mat-header-cell">Rule No.</th>
+                <th class="mat-header-cell">Rule Name</th>
+                <th class="mat-header-cell">Detail</th>
               </tr>
             </thead>
             <tbody>
               <tr class="mat-row">
                 <td class="mat-cell">1</td>
-                <td class="mat-cell">Consumption Threshold Notification</td>
                 <td class="mat-cell">
-                  <div style="padding: 10px">
-                    <mat-form-field appearance="outline">
-                      <mat-label>Amount Threshold</mat-label>
-                      <input
-                        [readonly]="true"
-                        matInput
-                        placeholder="Placeholder"
-                        value="500"
-                      />
-                      <mat-icon matSuffix>attach_money</mat-icon>
-                    </mat-form-field>
-                  </div>
+                  Domestic Consumption Threshold of Visa Platinum MasterCard
+                  Platinum MasterCard Titanium Cards
                 </td>
+                <td class="mat-cell"></td>
               </tr>
               <tr class="mat-row">
                 <td class="mat-cell">2</td>
                 <td class="mat-cell">
-                  Primary/Supplemental Card Transaction Notification
+                  Foreign Consumption Threshold of Visa Platinum MasterCard
+                  Platinum MasterCard Titanium Cards
                 </td>
-                <td class="mat-cell">
-                  <div style="padding: 10px">
-                    <mat-checkbox
-                      style="padding-right: 10px"
-                      class="example-margin"
-                      [disabled]="true"
-                      [checked]="true"
-                      >Primary</mat-checkbox
-                    >
-                    <mat-checkbox
-                      style="padding-right: 10px"
-                      class="example-margin"
-                      [disabled]="true"
-                      >Supplemental</mat-checkbox
-                    >
-                  </div>
-                </td>
+                <td class="mat-cell"></td>
               </tr>
             </tbody>
           </table>
