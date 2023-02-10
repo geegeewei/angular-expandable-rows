@@ -6,7 +6,7 @@
       matInput
       placeholder="Customer ID"
       name="search"
-      [(ngModel)]="search"
+      value="A123456789"
     />
     <button matSuffix mat-button><mat-icon>search</mat-icon></button>
   </mat-form-field>
@@ -86,13 +86,13 @@
                       class="example-margin"
                       [disabled]="true"
                       [checked]="true"
-                      >Domestic</mat-checkbox
+                      >Primary</mat-checkbox
                     >
                     <mat-checkbox
                       style="padding-right: 10px"
                       class="example-margin"
                       [disabled]="true"
-                      >Foreign</mat-checkbox
+                      >Supplemental</mat-checkbox
                     >
                   </div>
                 </td>
