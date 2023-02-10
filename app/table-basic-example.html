@@ -5,8 +5,8 @@
       type="tel"
       matInput
       placeholder="Customer ID"
+      value="A123456789"
       name="search"
-      [(ngModel)]="search"
     />
     <button matSuffix mat-button><mat-icon>search</mat-icon></button>
   </mat-form-field>
@@ -26,23 +26,6 @@
           style="overflow: hidden"
           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'"
         >
-          <button _ngcontent-ily-c0="">
-            <mat-icon
-              _ngcontent-ily-c0=""
-              class="
-                add-button
-                mat-icon
-                notranslate
-                material-icons
-                mat-icon-no-color
-              "
-              role="img"
-              aria-hidden="true"
-              data-mat-icon-type="font"
-              >add_box</mat-icon
-            >
-          </button>
-
           <table class="mat-table">
             <thead>
               <tr class="mat-header-row">
@@ -67,7 +50,7 @@
                         [readonly]="true"
                         matInput
                         placeholder="Placeholder"
-                        value="2000"
+                        value="500"
                       />
                       <mat-icon matSuffix>attach_money</mat-icon>
                     </mat-form-field>
