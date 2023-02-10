@@ -28,7 +28,7 @@ import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 })
 export class TableBasicExample {
   dataSource = new MatTableDataSource(ELEMENT_DATA.slice());
-  columnsToDisplay = ['No', 'Channel'];
+  columnsToDisplay = ['No', 'Channel', ""];
   expandedElement: Element;
   conditions: Condition;
   @ViewChild(MatSort) sort: MatSort;
