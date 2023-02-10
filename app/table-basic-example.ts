@@ -28,7 +28,7 @@ import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 })
 export class TableBasicExample {
   dataSource = new MatTableDataSource(ELEMENT_DATA.slice());
-  columnsToDisplay = ['No', 'Rule'];
+  columnsToDisplay = ['No', 'Channel'];
   expandedElement: Element;
   conditions: Condition;
   @ViewChild(MatSort) sort: MatSort;
@@ -46,7 +46,7 @@ export class TableBasicExample {
 }
 
 export interface Element {
-  Rule: string;
+  Channel: string;
   No: number;
   weight: number;
   symbol: string;
@@ -60,35 +60,35 @@ export interface Condition {
 const ELEMENT_DATA: Element[] = [
   {
     No: 1,
-    Rule: 'Domestic Consumption Threshold of Visa Platinum/MasterCard Platinum /MasterCard Titanium Cards',
+    Channel: 'Free SMS',
     weight: 1.0079,
     symbol: 'H',
   },
   {
     No: 2,
-    Rule: 'Foreign Consumption Threshold of Visa Platinum/MasterCard Platinum /MasterCard Titanium Cards',
+    Channel: 'LINE BC',
     weight: 4.0026,
     symbol: 'He',
   },
   {
     No: 3,
-    Rule: 'Consumption Threshold and Non-EC authenticated and Non-specific MCC',
+    Channel: 'LINE AOA',
     weight: 6.941,
     symbol: 'Li',
   },
   {
     No: 4,
-    Rule: 'Transactions of non-EC authenticated and non-specific MCC and excess EC transaction count',
+    Channel: 'Email',
     weight: 9.0122,
     symbol: 'Be',
   },
-  {
-    No: 5,
-    Rule: 'Transaction of citizen cardholder',
-    weight: 10.811,
-    symbol: 'B',
-  },
-  { No: 6, Rule: 'Cash advance', weight: 12.0107, symbol: 'C' },
+  // {
+  //   No: 5,
+  //   Channel: 'Transaction of citizen cardholder',
+  //   weight: 10.811,
+  //   symbol: 'B',
+  // },
+  // { No: 6, Channel: 'Cash advance', weight: 12.0107, symbol: 'C' },
   // {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
   // {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
   // {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
@@ -105,15 +105,6 @@ const ELEMENT_DATA: Element[] = [
   // {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
 ];
 
-const conditions: Condition[] = [
-  {
-    value: '1',
-    viewValue:
-      'Global notification threshold for domestic/foreign transaction amount',
-  },
-  { value: '2', viewValue: 'Excess percentage of credit limit' },
-  { value: '3', viewValue: 'Transaction of Specific Product Name' },
-];
 /**  Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
     can be found in the LICENSE file at http://angular.io/license */
