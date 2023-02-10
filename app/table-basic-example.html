@@ -158,18 +158,36 @@
                 </td>
               </tr> -->
 
-
               <tr class="mat-row">
                 <td class="mat-cell">1</td>
-                <td class="mat-cell">Global notification threshold for domestic/foreign transaction amount</td>
+                <td class="mat-cell">
+                  Global notification threshold for domestic/foreign transaction
+                  amount
+                </td>
                 <td class="mat-cell">
                   <div style="padding: 10px">
-                    <mat-checkbox style="padding-right: 10px" class="example-margin" [disabled]="true" [checked]="true" >Domestic</mat-checkbox>
-                    <mat-checkbox style="padding-right: 10px" class="example-margin" [disabled]="true">Foreign</mat-checkbox>
+                    <mat-checkbox
+                      style="padding-right: 10px"
+                      class="example-margin"
+                      [disabled]="true"
+                      [checked]="true"
+                      >Domestic</mat-checkbox
+                    >
+                    <mat-checkbox
+                      style="padding-right: 10px"
+                      class="example-margin"
+                      [disabled]="true"
+                      >Foreign</mat-checkbox
+                    >
                     <span style="padding-right: 10px"></span>
                     <mat-form-field appearance="outline">
                       <mat-label>Amount Threshold</mat-label>
-                      <input  [readonly]="true" matInput placeholder="Placeholder" value="5000" />
+                      <input
+                        [readonly]="true"
+                        matInput
+                        placeholder="Placeholder"
+                        value="5000"
+                      />
                       <mat-icon matSuffix>attach_money</mat-icon>
                     </mat-form-field>
                   </div>
@@ -271,7 +289,6 @@
                   </button>
                 </td>
               </tr>
-
 
               <!-- <tr class="mat-row">
                 <td class="mat-cell">2</td>
