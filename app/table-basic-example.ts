@@ -60,25 +60,25 @@ export interface Condition {
 const ELEMENT_DATA: Element[] = [
   {
     No: 1,
-    Rule: 'Domestic transaction amount  threshold of Visa Signature/MasterCard Titanium/JCB Precious Card',
+    Rule: 'Domestic Consumption Threshold of Visa Platinum/MasterCard Platinum /MasterCard Titanium Cards',
     weight: 1.0079,
     symbol: 'H',
   },
   {
     No: 2,
-    Rule: 'Foreign transactions amount  threshold of Visa Signature/MasterCard Titanium/JCB Precious Card',
+    Rule: 'Foreign Consumption Threshold of Visa Platinum/MasterCard Platinum /MasterCard Titanium Cards',
     weight: 4.0026,
     symbol: 'He',
   },
   {
     No: 3,
-    Rule: 'Transactions of Transactions amount threshold and non-EC authenticated and non-specific MCC',
+    Rule: 'Consumption Threshold and Non-EC authenticated and Non-specific MCC',
     weight: 6.941,
     symbol: 'Li',
   },
   {
     No: 4,
-    Rule: 'Transactions of non-EC authenticated and non-specific MCC and exceeding EC transaction count',
+    Rule: 'Transactions of non-EC authenticated and non-specific MCC and excess EC transaction count',
     weight: 9.0122,
     symbol: 'Be',
   },

@@ -161,9 +161,122 @@
               <tr class="mat-row">
                 <td class="mat-cell">1</td>
                 <td class="mat-cell">
-                  Global notification threshold for domestic/foreign transaction
-                  amount
+                  Consumption Threshold for domestic/foreign transaction amount
                 </td>
+                <td class="mat-cell">
+                  <div style="padding: 10px">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Amount Threshold</mat-label>
+                      <input
+                        [readonly]="true"
+                        matInput
+                        placeholder="Placeholder"
+                        value="5000"
+                      />
+                      <mat-icon matSuffix>attach_money</mat-icon>
+                    </mat-form-field>
+                  </div>
+                </td>
+
+                <td class="mat-cell">
+                  <button
+                    _ngcontent-ily-c0=""
+                    class="
+                      material-icons
+                      app-toolbar-menu
+                      save-button
+                      mat-focus-indicator
+                      mat-tooltip-trigger
+                      mat-icon-button
+                      mat-button-base
+                      mat-primary
+                      ng-star-inserted
+                    "
+                    color="primary"
+                    mat-icon-button=""
+                    mattooltip="Edit"
+                    ng-reflect-color="primary"
+                    ng-reflect-message="Edit"
+                    aria-describedby="cdk-describedby-message-0"
+                    cdk-describedby-host=""
+                  >
+                    <span class="mat-button-wrapper"
+                      ><mat-icon
+                        _ngcontent-ily-c0=""
+                        class="
+                          mat-icon
+                          notranslate
+                          material-icons
+                          mat-icon-no-color
+                        "
+                        role="img"
+                        aria-hidden="true"
+                        data-mat-icon-type="font"
+                        >edit</mat-icon
+                      ></span
+                    ><span
+                      class="
+                        mat-button-ripple mat-ripple mat-button-ripple-round
+                      "
+                      matripple=""
+                      ng-reflect-centered="true"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    ></span
+                    ><span class="mat-button-focus-overlay"></span>
+                  </button>
+
+                  <button
+                    _ngcontent-ily-c0=""
+                    class="
+                      material-icons
+                      app-toolbar-menu
+                      delete-button
+                      mat-focus-indicator
+                      mat-tooltip-trigger
+                      mat-icon-button
+                      mat-button-base
+                      mat-warn
+                      ng-star-inserted
+                    "
+                    color="warn"
+                    mat-icon-button=""
+                    mattooltip="Delete"
+                    ng-reflect-color="warn"
+                    ng-reflect-message="Delete"
+                    aria-describedby="cdk-describedby-message-1"
+                    cdk-describedby-host=""
+                  >
+                    <span class="mat-button-wrapper"
+                      ><mat-icon
+                        _ngcontent-ily-c0=""
+                        class="
+                          mat-icon
+                          notranslate
+                          material-icons
+                          mat-icon-no-color
+                        "
+                        role="img"
+                        aria-hidden="true"
+                        data-mat-icon-type="font"
+                        >delete</mat-icon
+                      ></span
+                    ><span
+                      class="
+                        mat-button-ripple mat-ripple mat-button-ripple-round
+                      "
+                      matripple=""
+                      ng-reflect-centered="true"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    ></span
+                    ><span class="mat-button-focus-overlay"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="mat-row">
+                <td class="mat-cell">2</td>
+                <td class="mat-cell">Domestic/Foreign Transaction</td>
                 <td class="mat-cell">
                   <div style="padding: 10px">
                     <mat-checkbox
@@ -179,17 +292,125 @@
                       [disabled]="true"
                       >Foreign</mat-checkbox
                     >
-                    <span style="padding-right: 10px"></span>
-                    <mat-form-field appearance="outline">
-                      <mat-label>Amount Threshold</mat-label>
-                      <input
-                        [readonly]="true"
-                        matInput
-                        placeholder="Placeholder"
-                        value="5000"
-                      />
-                      <mat-icon matSuffix>attach_money</mat-icon>
-                    </mat-form-field>
+                  </div>
+                </td>
+
+                <td class="mat-cell">
+                  <button
+                    _ngcontent-ily-c0=""
+                    class="
+                      material-icons
+                      app-toolbar-menu
+                      save-button
+                      mat-focus-indicator
+                      mat-tooltip-trigger
+                      mat-icon-button
+                      mat-button-base
+                      mat-primary
+                      ng-star-inserted
+                    "
+                    color="primary"
+                    mat-icon-button=""
+                    mattooltip="Edit"
+                    ng-reflect-color="primary"
+                    ng-reflect-message="Edit"
+                    aria-describedby="cdk-describedby-message-0"
+                    cdk-describedby-host=""
+                  >
+                    <span class="mat-button-wrapper"
+                      ><mat-icon
+                        _ngcontent-ily-c0=""
+                        class="
+                          mat-icon
+                          notranslate
+                          material-icons
+                          mat-icon-no-color
+                        "
+                        role="img"
+                        aria-hidden="true"
+                        data-mat-icon-type="font"
+                        >edit</mat-icon
+                      ></span
+                    ><span
+                      class="
+                        mat-button-ripple mat-ripple mat-button-ripple-round
+                      "
+                      matripple=""
+                      ng-reflect-centered="true"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    ></span
+                    ><span class="mat-button-focus-overlay"></span>
+                  </button>
+
+                  <button
+                    _ngcontent-ily-c0=""
+                    class="
+                      material-icons
+                      app-toolbar-menu
+                      delete-button
+                      mat-focus-indicator
+                      mat-tooltip-trigger
+                      mat-icon-button
+                      mat-button-base
+                      mat-warn
+                      ng-star-inserted
+                    "
+                    color="warn"
+                    mat-icon-button=""
+                    mattooltip="Delete"
+                    ng-reflect-color="warn"
+                    ng-reflect-message="Delete"
+                    aria-describedby="cdk-describedby-message-1"
+                    cdk-describedby-host=""
+                  >
+                    <span class="mat-button-wrapper"
+                      ><mat-icon
+                        _ngcontent-ily-c0=""
+                        class="
+                          mat-icon
+                          notranslate
+                          material-icons
+                          mat-icon-no-color
+                        "
+                        role="img"
+                        aria-hidden="true"
+                        data-mat-icon-type="font"
+                        >delete</mat-icon
+                      ></span
+                    ><span
+                      class="
+                        mat-button-ripple mat-ripple mat-button-ripple-round
+                      "
+                      matripple=""
+                      ng-reflect-centered="true"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    ></span
+                    ><span class="mat-button-focus-overlay"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr class="mat-row">
+                <td class="mat-cell">3</td>
+                <td class="mat-cell">Transaction of Product Type</td>
+                <td class="mat-cell">
+                  <div style="padding: 10px; width: 350px">
+                    <mat-card>
+                      <mat-card-content>
+                        <mat-list role="list">
+                          <mat-list-item role="listitem"
+                            >V003 - VISA PLATINUM</mat-list-item
+                          >
+                          <mat-list-item role="listitem"
+                            >M003 - MASTERCARD PLATINUM</mat-list-item
+                          >
+                          <mat-list-item role="listitem"
+                            >M004 - MASTERCARD TITANIUM</mat-list-item
+                          >
+                        </mat-list>
+                      </mat-card-content>
+                    </mat-card>
                   </div>
                 </td>
 
