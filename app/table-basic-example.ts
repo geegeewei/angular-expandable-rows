@@ -28,7 +28,7 @@ import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 })
 export class TableBasicExample {
   dataSource = new MatTableDataSource(ELEMENT_DATA.slice());
-  columnsToDisplay = ['No', 'Channel', ""];
+  columnsToDisplay = ['No', 'Channel', 'Action'];
   expandedElement: Element;
   conditions: Condition;
   @ViewChild(MatSort) sort: MatSort;
@@ -82,13 +82,13 @@ const ELEMENT_DATA: Element[] = [
     weight: 9.0122,
     symbol: 'Be',
   },
-  {
-    No: 5,
-    Channel: 'Paid SMS',
-    weight: 10.811,
-    symbol: 'B',
-  },
-  { No: 6, Channel: 'HomeBank PUSH', weight: 12.0107, symbol: 'C' },
+  // {
+  //   No: 5,
+  //   Channel: 'Paid SMS',
+  //   weight: 10.811,
+  //   symbol: 'B',
+  // },
+  // { No: 6, Channel: 'HomeBank PUSH', weight: 12.0107, symbol: 'C' },
   // {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
   // {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
   // {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
