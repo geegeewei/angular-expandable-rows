@@ -7,7 +7,7 @@ import {
   trigger,
 } from '@angular/animations';
 import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
-
+import {FormControl} from '@angular/forms';
 /**
  * @title Basic table
  */
@@ -28,9 +28,13 @@ import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 })
 export class TableBasicExample {
   dataSource = new MatTableDataSource(ELEMENT_DATA.slice());
-  columnsToDisplay = ['No', 'Rule'];
+  columnsToDisplay = ['No', 'Channel','MasterTemplateId', 'MasterTemplateName'];
   expandedElement: Element;
   conditions: Condition;
+  toppings1 = new FormControl();
+  toppings2= new FormControl();
+  toppingList: string[] = ['8710-LINE PAY', '8711-LINE PAY', '8712-LINE PAY', '8713-LINE PAY', '8714-LINE PAY', '8715-LINE PAY', '8716-LINE PAY', '8717-LINE PAY', 
+  '8718-LINE PAY', '8719-LINE PAY', '8720-LINE PAY', '8538-華航' ,  '8539-華航',  '8108- 101 聯名卡' ,  '8128- 101 聯名卡' ];
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -46,10 +50,11 @@ export class TableBasicExample {
 }
 
 export interface Element {
-  Rule: string;
+  MasterTemplateName: string;
   No: number;
   weight: number;
-  symbol: string;
+  Channel: string;
+  MasterTemplateId: string;
 }
 
 export interface Condition {
@@ -57,42 +62,48 @@ export interface Condition {
   viewValue: string;
 }
 
+
 const ELEMENT_DATA: Element[] = [
-  {
-    No: 0,
-    Rule: '預設模板',
-    weight: 1.0079,
-    symbol: 'H',
-  },
+  // {
+  //   No: 0,
+  //   Rule: '預設模板',
+  //   weight: 1.0079,
+  //   symbol: 'H',
+  // },
   {
     No: 1,
-    Rule: '國內有商店資訊之購貨交易',
+    MasterTemplateName: '國內有商店資訊之購貨交易',
     weight: 1.0079,
-    symbol: 'H',
+    Channel: 'LINE BC',
+    MasterTemplateId: 'C_JC_01'
   },
   {
     No: 2,
-    Rule: '國內無商店資訊之購貨交易',
+    MasterTemplateName: '國內無商店資訊之購貨交易',
     weight: 1.0079,
-    symbol: 'H',
+    Channel: 'LINE BC',
+    MasterTemplateId: 'C_JC_02'
   },
   {
     No: 3,
-    Rule: '國外之購貨交易',
+    MasterTemplateName: '鼎鈦御國內免費簡訊樣版',
     weight: 1.0079,
-    symbol: 'H',
+    Channel: 'Free SMS',
+    MasterTemplateId: 'TP1'
   },
   {
     No:4,
-    Rule: '國內無商店資訊且為非NCCC收單特店之電信／保險購貨交易',
+    MasterTemplateName: '鼎鈦御國外免費簡訊樣版',
     weight: 1.0079,
-    symbol: 'H',
+    Channel: 'Free SMS',
+    MasterTemplateId: 'TP3'
   },
   {
     No: 5,
-    Rule: '華航通路消費之交易',
+    MasterTemplateName: '取消交易付費簡訊樣版',
     weight: 1.0079,
-    symbol: 'H',
+    Channel: 'Paid SMS',
+    MasterTemplateId: 'MG3'
   },
   // {
   //   No: 2,
